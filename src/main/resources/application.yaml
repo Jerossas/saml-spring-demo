@@ -1,3 +1,11 @@
 spring:
   application:
     name: saml-spring-demo
+
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure:
+            assertingparty:
+              metadata-uri: ${APP_FEDERATION_METADATA_URL}
